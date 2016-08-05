@@ -15,6 +15,26 @@ div.navbar.shrink {
   height: 35px !important;
 }
 
+.navbar-collapse.in,
+.navbar-collapse.collapsing {
+  background-color:white;
+}
+
+.navbar-collapse.in>.navbar-nav>li>a,
+.navbar-collapse.collapsing>.navbar-nav>li>a {
+  color: #222;
+}
+.navbar-collapse.in>.navbar-nav>li>a:hover,
+.navbar-collapse.collapsing>.navbar-nav>li>a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.in {
+    background-color: inherit;
+  }
+}
+
 .navbar-nav>li {
   height: 100%;
 }
